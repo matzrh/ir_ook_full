@@ -1,0 +1,15 @@
+[Unit]
+Description=IR OOK Sender with Arduino Dongle
+After=syslog.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/usr/local/bin
+ExecStart=/usr/local/bin/ir_ook_sender.py
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
