@@ -38,4 +38,6 @@ sed -i "$r2" tmp.py
 cp -v *.service $sysdpath
 cp -v tmp.py "$binpath/$program"
 rm tmp.py
+
+echo "I will try to fulfill requirements for python, but you may have to manuall pip3 install modules in requirements.txt"
 /usr/bin/pip3 install -r requirements.txt
